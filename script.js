@@ -191,49 +191,22 @@ function drawText() {
             "was breaking, yet we stood stronger together."
         ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
         opacity -= 0.01;
-    }
+      }
 
-    if(frameNumber == 2500){ opacity = 0; }
-
-    // Sentence 6
-    if(frameNumber > 2500 && frameNumber < 2750){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        drawTextWithLineBreaks([
-            "Every time I look at you, my butterfly,",
-            "I see the light that changed my life."
-        ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
-        opacity += 0.01;
-    }
-
-    if(frameNumber >= 2750){
-        context.fillStyle = `rgba(45, 45, 255, ${secondOpacity})`;
-        drawTextWithLineBreaks([
-            "I love you, Zaina, more deeply than words can explain.",
-            "Maybe we are apart this year, but I will do everything",
-            "to make sure our next Valentine’s Day is together."
-        ], canvas.width/2, canvas.height/2 + 60, fontSize, lineHeight);
-        secondOpacity += 0.01;
-    }
-
-    if(frameNumber >= 3000){
+    if(frameNumber >= 3000 && frameNumber < 99999){
         context.fillStyle = `rgba(45, 45, 255, ${thirdOpacity})`;
-        context.fillText("Happy Valentine’s Day, meri jaan <3", canvas.width/2, canvas.height/2 + 140);
-        thirdOpacity += 0.01;
+        context.fillText("Happy Valentine's Day <3", canvas.width/2, (canvas.height/2 + 120));
+        thirdOpacity = thirdOpacity + 0.01;
 
         button.style.display = "block";
-    }
-
-    context.shadowColor = "transparent";
-    context.shadowBlur = 0;
-    context.shadowOffsetX = 0;
-    context.shadowOffsetY = 0;
-}
+    }   
 
      // Reset the shadow effect after drawing the text
      context.shadowColor = "transparent";
      context.shadowBlur = 0;
      context.shadowOffsetX = 0;
      context.shadowOffsetY = 0;
+}
 
 function draw() {
     context.putImageData(baseFrame, 0, 0);
