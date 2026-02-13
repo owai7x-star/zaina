@@ -246,31 +246,23 @@ function drawText() {
 
     if(frameNumber == 3500){ opacity = 0; }
 
-    // ================= FINAL PERMANENT SCREEN (MOBILE SAFE) =================
-    if(frameNumber > 3500){
+ // ================= FINAL PERMANENT SCREEN =================
+if(frameNumber > 3500){
 
-        if(finalOpacity < 1){
-            finalOpacity += 0.01;
-        }
-
-        context.fillStyle = `rgba(45,45,255,${finalOpacity})`;
-
-        let finalY = centerY - 60;
-
-        if(window.innerWidth < 600){
-            finalY = centerY - 100;
-        }
-
-        drawTextWithLineBreaks([
-            "I love you, Zaina, more deeply than words can ever explain.",
-            "Maybe we are apart this year, but I will do everything in my power",
-            "to make sure our next Valentine’s Day is together, with no screens, no miles, only us.",
-            "Happy Valentine’s Day, meri jaan <3"
-        ], canvas.width/2, finalY, fontSize, lineHeight);
-
-        button.style.display = "block";
-        button.style.top = (finalY + 180) + "px";
+    if(finalOpacity < 1){
+        finalOpacity += 0.01;
     }
+
+    context.fillStyle = `rgba(45,45,255,${finalOpacity})`;
+
+    drawTextWithLineBreaks([
+        "In every lifetime, in every universe,",
+        "I would still choose you.",
+        "Happy Valentine’s Day, meri jaan."
+    ], canvas.width/2, canvas.height/2 - fontSize, fontSize, lineHeight);
+
+    button.style.display = "block";
+}
 }
 
 
