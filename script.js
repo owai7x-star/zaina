@@ -234,7 +234,6 @@ function drawText() {
      context.shadowBlur = 0;
      context.shadowOffsetX = 0;
      context.shadowOffsetY = 0;
-}
 
 function draw() {
     context.putImageData(baseFrame, 0, 0);
