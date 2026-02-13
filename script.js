@@ -45,6 +45,7 @@ var frameNumber = 0;
 var opacity = 0;
 var secondOpacity = 0;
 var thirdOpacity = 0;
+var finalOpacity = 0;
 
 var baseFrame = context.getImageData(0, 0, window.innerWidth, window.innerHeight);
 
@@ -219,21 +220,23 @@ function drawText() {
     }
     if(frameNumber == 3500){ opacity = 0; }
 
-    // ================= FINAL PERMANENT SCREEN =================
-    if(frameNumber > 3500){
-        context.fillStyle = "rgba(45,45,255,1)";
-        drawTextWithLineBreaks([
-            "I love you, Zaina, more deeply than words can ever explain.",
-            "Maybe we are apart this year, but I will do everything in my power",
-            "to make sure our next Valentine’s Day is together, with no screens, no miles, only us.",
-            "Happy Valentine’s Day, meri jaan <3"
-        ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+   // ================= FINAL PERMANENT SCREEN =================
+if(frameNumber > 3500){
 
-        button.style.display = "block";
+    if(finalOpacity < 1){
+        finalOpacity += 0.01;
     }
 
-    context.shadowColor = "transparent";
-    context.shadowBlur = 0;
+    context.fillStyle = `rgba(45,45,255,${finalOpacity})`;
+
+    drawTextWithLineBreaks([
+        "I love you, Zaina, more deeply than words can ever explain.",
+        "Maybe we are apart this year, but I will do everything in my power",
+        "to make sure our next Valentine’s Day is together, with no screens, no miles, only us.",
+        "Happy Valentine’s Day, meri jaan <3"
+    ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+
+    button.style.display = "block";
 }
 
 function draw() {
