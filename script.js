@@ -192,6 +192,7 @@ function drawText() {
         ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
         opacity -= 0.01;
       }
+  if(frameNumber == 2500){ opacity = 0; }
 
     if(frameNumber >= 3000 && frameNumber < 99999){
         context.fillStyle = `rgba(45, 45, 255, ${thirdOpacity})`;
