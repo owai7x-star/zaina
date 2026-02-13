@@ -233,10 +233,11 @@ if(frameNumber > 3500){
         "I love you, Zaina, more deeply than words can ever explain.",
         "Maybe we are apart this year, but I will do everything in my power",
         "to make sure our next Valentine’s Day is together, with no screens, no miles, only us.",
-        "Happy Valentine’s Day, meri jaan <3"
+        "Happy Valentine’s Day, meri jaan <3",
     ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
 
     button.style.display = "block";
+}
 }
 
 function draw() {
