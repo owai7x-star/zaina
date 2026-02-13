@@ -75,16 +75,16 @@ button.addEventListener("click", () => {
     fetch('send_mail.php')
       .then(response => {
         if (response.ok) {
-          button.textContent = "Check Your Email 🙃";
+          button.textContent = "Muwaah 🩷";
         } else {
           console.error('Failed to send email');
-          button.textContent = "Error 😞";
+          button.textContent = "Muwaah 🩷";
         }
       })
       .catch(error => {
         // Handle network errors or other issues
         console.error('Error:', error);
-        button.textContent = "Error 😞";
+        button.textContent = "Muwaah 🩷";
       });
   }
 });
@@ -110,13 +110,13 @@ function drawText() {
 
     if(frameNumber < 250){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("everyday day I cannot believe how lucky I am", canvas.width/2, canvas.height/2);
+        context.fillText("Out of all the endless possibilities written in this universe, somehow our hearts found each other, Zaina.", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     //fades out the text by decreasing the opacity
     if(frameNumber >= 250 && frameNumber < 500){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("everyday day I cannot believe how lucky I am", canvas.width/2, canvas.height/2);
+        context.fillText("Out of all the endless possibilities written in this universe, somehow our hearts found each other, Zaina.", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
@@ -128,9 +128,9 @@ function drawText() {
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {           //shortens long sentence for mobile screens
-            drawTextWithLineBreaks(["amongst trillions and trillions of stars,", "over billions of years"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["What began as a simple moment turned into nights filled with laughter,", "arguments, healing, and a love that quietly became our home."], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("amongst trillions and trillions of stars, over billions of years", canvas.width/2, canvas.height/2);
+            context.fillText("What began as a simple moment turned into nights filled with laughter, arguments, healing, and a love that quietly became our home.", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity + 0.01;
@@ -139,9 +139,9 @@ function drawText() {
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
         
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["amongst trillions and trillions of stars,", "over billions of years"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["What began as a simple moment turned into nights filled with laughter,", "arguments, healing, and a love that quietly became our home."], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("amongst trillions and trillions of stars, over billions of years", canvas.width/2, canvas.height/2);
+            context.fillText("What began as a simple moment turned into nights filled with laughter, arguments, healing, and a love that quietly became our home.", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity - 0.01;
@@ -152,12 +152,12 @@ function drawText() {
     }
     if(frameNumber > 1000 && frameNumber < 1250){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("to be alive, and to get to spend this life with you", canvas.width/2, canvas.height/2);
+        context.fillText("We have seen each other at our weakest and still chose to stay, and that choice is what makes us real.", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 1250 && frameNumber < 1500){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("to be alive, and to get to spend this life with you", canvas.width/2, canvas.height/2);
+        context.fillText("We have seen each other at our weakest and still chose to stay, and that choice is what makes us real.", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
@@ -166,12 +166,12 @@ function drawText() {
     }
     if(frameNumber > 1500 && frameNumber < 1750){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("is so incredibly, unfathomably unlikely", canvas.width/2, canvas.height/2);
+        context.fillText("Across borders and distance that try to define us, our hearts built something that refuses to be divided.", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 1750 && frameNumber < 2000){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("is so incredibly, unfathomably unlikely", canvas.width/2, canvas.height/2);
+        context.fillText("Across borders and distance that try to define us, our hearts built something that refuses to be divided.", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
@@ -182,9 +182,9 @@ function drawText() {
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["and yet here I am to get the impossible", "chance to get to know you"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["We have faced fear, uncertainty, and even days that felt like the world was breaking,", "yet we stood stronger together."], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("and yet here I am to get the impossible chance to get to know you", canvas.width/2, canvas.height/2);
+            context.fillText("We have faced fear, uncertainty, and even days that felt like the world was breaking, yet we stood stronger together.", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity + 0.01;
@@ -193,9 +193,9 @@ function drawText() {
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["and yet here I am to get the impossible", "chance to get to know you"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["Every time I look at you, my butterfly,", "I feel the same spark and the same certainty that you are not just part of my life, you are the light in it."], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("and yet here I am to get the impossible chance to get to know you", canvas.width/2, canvas.height/2);
+            context.fillText("Every time I look at you, my butterfly, I feel the same spark and the same certainty that you are not just part of my life, you are the light in it.", canvas.width/2, canvas.height/2);
         }
         
         opacity = opacity - 0.01;
@@ -208,9 +208,12 @@ function drawText() {
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["I love you so much {name}, more than", "all the time and space in the universe can contain"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks([
+"I love you, Zaina, more deeply",
+"than words can ever fully explain."
+], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("I love you so much {name}, more than all the time and space in the universe can contain", canvas.width/2, canvas.height/2);
+            context.fillText("I love you, Zaina, more deeply than words can ever fully explain.", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity + 0.01;
@@ -221,9 +224,13 @@ function drawText() {
 
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["and I can't wait to spend all the time in", "the world to share that love with you!"], canvas.width / 2, (canvas.height/2 + 60), fontSize, lineHeight);
+            drawTextWithLineBreaks([
+"Maybe we are apart this year,",
+"but I will do everything in my power",
+"to make sure our next Valentine’s Day is together!"
+], canvas.width / 2, (canvas.height/2 + 60), fontSize, lineHeight);
         } else {
-            context.fillText("and I can't wait to spend all the time in the world to share that love with you!", canvas.width/2, (canvas.height/2 + 50));
+            context.fillText("Maybe we are apart this year, but I will do everything in my power to make sure our next Valentine’s Day is together!", canvas.width/2, (canvas.height/2 + 50));
         }
 
         secondOpacity = secondOpacity + 0.01;
@@ -231,7 +238,7 @@ function drawText() {
 
     if(frameNumber >= 3000 && frameNumber < 99999){
         context.fillStyle = `rgba(45, 45, 255, ${thirdOpacity})`;
-        context.fillText("Happy Valentine's Day <3", canvas.width/2, (canvas.height/2 + 120));
+        context.fillText("Happy Valentine’s Day, meri jaan, until the day there are no miles between us. <3", canvas.width/2, (canvas.height/2 + 120));
         thirdOpacity = thirdOpacity + 0.01;
 
         button.style.display = "block";
