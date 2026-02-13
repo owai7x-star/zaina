@@ -193,6 +193,79 @@ function drawText() {
         opacity -= 0.01;
       }
   if(frameNumber == 2500){ opacity = 0; }
+      // Sentence 6
+    if(frameNumber > 2500 && frameNumber < 2750){
+        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        drawTextWithLineBreaks([
+            "Every time I look at you, my butterfly,",
+            "I see the light that changed my life."
+        ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        opacity += 0.01;
+    }
+    if(frameNumber >= 2750 && frameNumber < 3000){
+        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        drawTextWithLineBreaks([
+            "Every time I look at you, my butterfly,",
+            "I see the light that changed my life."
+        ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        opacity -= 0.01;
+    }
+
+    if(frameNumber == 3000){ opacity = 0; }
+
+    // Sentence 7
+    if(frameNumber > 3000 && frameNumber < 3250){
+        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillText("I love you, Zaina, more deeply than words can explain.", canvas.width/2, canvas.height/2);
+        opacity += 0.01;
+    }
+    if(frameNumber >= 3250 && frameNumber < 3500){
+        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillText("I love you, Zaina, more deeply than words can explain.", canvas.width/2, canvas.height/2);
+        opacity -= 0.01;
+    }
+
+    if(frameNumber == 3500){ opacity = 0; }
+
+    // Sentence 8
+    if(frameNumber > 3500 && frameNumber < 3750){
+        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        drawTextWithLineBreaks([
+            "Maybe we are apart this year,",
+            "but I will do everything to make sure"
+        ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        opacity += 0.01;
+    }
+    if(frameNumber >= 3750 && frameNumber < 4000){
+        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        drawTextWithLineBreaks([
+            "Maybe we are apart this year,",
+            "but I will do everything to make sure"
+        ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        opacity -= 0.01;
+    }
+
+    if(frameNumber == 4000){ opacity = 0; }
+
+    // Sentence 9
+    if(frameNumber > 4000 && frameNumber < 4250){
+        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        drawTextWithLineBreaks([
+            "our next Valentine's Day is together,",
+            "with no screens, no miles, only us."
+        ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        opacity += 0.01;
+    }
+    if(frameNumber >= 4250 && frameNumber < 4500){
+        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        drawTextWithLineBreaks([
+            "our next Valentine's Day is together,",
+            "with no screens, no miles, only us."
+        ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        opacity -= 0.01;
+    }
+
+    if(frameNumber == 4500){ opacity = 0; }
 
     if(frameNumber >= 3000 && frameNumber < 99999){
         context.fillStyle = `rgba(45, 45, 255, ${thirdOpacity})`;
