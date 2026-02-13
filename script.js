@@ -1,3 +1,22 @@
+/* ===== Background Music Auto Start ===== */
+
+const bgMusic = new Audio("public/music.mp3");
+bgMusic.loop = true;
+bgMusic.volume = 0.5;
+
+let musicStarted = false;
+
+function startMusicOnce() {
+  if (!musicStarted) {
+    bgMusic.play().catch(() => {});
+    musicStarted = true;
+  }
+}
+
+document.addEventListener("click", startMusicOnce);
+document.addEventListener("touchstart", startMusicOnce);
+
+/* ===== End Music Code ===== */
 var canvas = document.getElementById("starfield");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
