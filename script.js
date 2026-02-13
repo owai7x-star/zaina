@@ -96,6 +96,7 @@ function drawTextWithLineBreaks(lines, x, y, fontSize, lineHeight) {
 }
 
 function drawText() {
+
     var fontSize = Math.min(30, window.innerWidth / 24);
     var lineHeight = 8;
 
@@ -107,37 +108,37 @@ function drawText() {
     context.shadowOffsetX = 0;
     context.shadowOffsetY = 0;
 
-    // Sentence 1
+    // Sentence 1 (0–500)
     if(frameNumber < 250){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(45,45,255,${opacity})`;
         context.fillText("Out of all the endless possibilities written in this universe,", canvas.width/2, canvas.height/2);
         opacity += 0.01;
     }
     if(frameNumber >= 250 && frameNumber < 500){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(45,45,255,${opacity})`;
         context.fillText("Out of all the endless possibilities written in this universe,", canvas.width/2, canvas.height/2);
         opacity -= 0.01;
     }
 
     if(frameNumber == 500){ opacity = 0; }
 
-    // Sentence 2
+    // Sentence 2 (500–1000)
     if(frameNumber > 500 && frameNumber < 750){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(45,45,255,${opacity})`;
         context.fillText("somehow our hearts found each other, Zaina.", canvas.width/2, canvas.height/2);
         opacity += 0.01;
     }
     if(frameNumber >= 750 && frameNumber < 1000){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(45,45,255,${opacity})`;
         context.fillText("somehow our hearts found each other, Zaina.", canvas.width/2, canvas.height/2);
         opacity -= 0.01;
     }
 
     if(frameNumber == 1000){ opacity = 0; }
 
-    // Sentence 3
+    // Sentence 3 (1000–1500)
     if(frameNumber > 1000 && frameNumber < 1250){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(45,45,255,${opacity})`;
         drawTextWithLineBreaks([
             "What began as a simple moment turned into nights",
             "filled with laughter, arguments, healing, and love."
@@ -145,7 +146,7 @@ function drawText() {
         opacity += 0.01;
     }
     if(frameNumber >= 1250 && frameNumber < 1500){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(45,45,255,${opacity})`;
         drawTextWithLineBreaks([
             "What began as a simple moment turned into nights",
             "filled with laughter, arguments, healing, and love."
@@ -155,9 +156,9 @@ function drawText() {
 
     if(frameNumber == 1500){ opacity = 0; }
 
-    // Sentence 4
+    // Sentence 4 (1500–2000)
     if(frameNumber > 1500 && frameNumber < 1750){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(45,45,255,${opacity})`;
         drawTextWithLineBreaks([
             "Across borders and distance that try to define us,",
             "our hearts built something that refuses to be divided."
@@ -165,7 +166,7 @@ function drawText() {
         opacity += 0.01;
     }
     if(frameNumber >= 1750 && frameNumber < 2000){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(45,45,255,${opacity})`;
         drawTextWithLineBreaks([
             "Across borders and distance that try to define us,",
             "our hearts built something that refuses to be divided."
@@ -175,9 +176,9 @@ function drawText() {
 
     if(frameNumber == 2000){ opacity = 0; }
 
-    // Sentence 5
+    // Sentence 5 (2000–2500)
     if(frameNumber > 2000 && frameNumber < 2250){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(45,45,255,${opacity})`;
         drawTextWithLineBreaks([
             "We have faced fear and days that felt like the world",
             "was breaking, yet we stood stronger together."
@@ -185,101 +186,63 @@ function drawText() {
         opacity += 0.01;
     }
     if(frameNumber >= 2250 && frameNumber < 2500){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
+        context.fillStyle = `rgba(45,45,255,${opacity})`;
         drawTextWithLineBreaks([
             "We have faced fear and days that felt like the world",
             "was breaking, yet we stood stronger together."
         ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
         opacity -= 0.01;
-      }
-  if(frameNumber == 2500){ opacity = 0; }
-      // Sentence 6
+    }
+
+    if(frameNumber == 2500){ opacity = 0; }
+
+    // Sentence 6 (2500–3000)
     if(frameNumber > 2500 && frameNumber < 2750){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        drawTextWithLineBreaks([
-            "Every time I look at you, my butterfly,",
-            "I see the light that changed my life."
-        ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        context.fillStyle = `rgba(45,45,255,${opacity})`;
+        context.fillText("Every time I look at you, my butterfly,", canvas.width/2, canvas.height/2);
         opacity += 0.01;
     }
     if(frameNumber >= 2750 && frameNumber < 3000){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        drawTextWithLineBreaks([
-            "Every time I look at you, my butterfly,",
-            "I see the light that changed my life."
-        ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        context.fillStyle = `rgba(45,45,255,${opacity})`;
+        context.fillText("Every time I look at you, my butterfly,", canvas.width/2, canvas.height/2);
         opacity -= 0.01;
     }
 
     if(frameNumber == 3000){ opacity = 0; }
 
-    // Sentence 7
+    // Sentence 7 (3000–3500)
     if(frameNumber > 3000 && frameNumber < 3250){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("I love you, Zaina, more deeply than words can explain.", canvas.width/2, canvas.height/2);
+        context.fillStyle = `rgba(45,45,255,${opacity})`;
+        context.fillText("I love you, Zaina, more deeply than words can ever fully explain.", canvas.width/2, canvas.height/2);
         opacity += 0.01;
     }
     if(frameNumber >= 3250 && frameNumber < 3500){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("I love you, Zaina, more deeply than words can explain.", canvas.width/2, canvas.height/2);
+        context.fillStyle = `rgba(45,45,255,${opacity})`;
+        context.fillText("I love you, Zaina, more deeply than words can ever fully explain.", canvas.width/2, canvas.height/2);
         opacity -= 0.01;
     }
 
     if(frameNumber == 3500){ opacity = 0; }
 
-    // Sentence 8
-    if(frameNumber > 3500 && frameNumber < 3750){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        drawTextWithLineBreaks([
-            "Maybe we are apart this year,",
-            "but I will do everything to make sure"
-        ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
-        opacity += 0.01;
-    }
-    if(frameNumber >= 3750 && frameNumber < 4000){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        drawTextWithLineBreaks([
-            "Maybe we are apart this year,",
-            "but I will do everything to make sure"
-        ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
-        opacity -= 0.01;
-    }
+    // Final Block (appears together after 3500)
+    if(frameNumber > 3500){
+        context.fillStyle = `rgba(45,45,255,${thirdOpacity})`;
 
-    if(frameNumber == 4000){ opacity = 0; }
-
-    // Sentence 9
-    if(frameNumber > 4000 && frameNumber < 4250){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
         drawTextWithLineBreaks([
-            "our next Valentine's Day is together,",
-            "with no screens, no miles, only us."
+            "Maybe we are apart this year, but I will do everything in my power to make sure our next Valentine’s Day is together.",
+            "With no screens, no miles, only us.",
+            "Happy Valentine’s Day, meri jaan <3"
         ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
-        opacity += 0.01;
-    }
-    if(frameNumber >= 4250 && frameNumber < 4500){
-        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        drawTextWithLineBreaks([
-            "our next Valentine's Day is together,",
-            "with no screens, no miles, only us."
-        ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
-        opacity -= 0.01;
-    }
 
-    if(frameNumber == 4500){ opacity = 0; }
-
-    if(frameNumber >= 3000 && frameNumber < 99999){
-        context.fillStyle = `rgba(45, 45, 255, ${thirdOpacity})`;
-        context.fillText("Happy Valentine's Day <3", canvas.width/2, (canvas.height/2 + 120));
-        thirdOpacity = thirdOpacity + 0.01;
+        thirdOpacity += 0.01;
 
         button.style.display = "block";
-    }   
+    }
 
-     // Reset the shadow effect after drawing the text
-     context.shadowColor = "transparent";
-     context.shadowBlur = 0;
-     context.shadowOffsetX = 0;
-     context.shadowOffsetY = 0;
+    context.shadowColor = "transparent";
+    context.shadowBlur = 0;
+    context.shadowOffsetX = 0;
+    context.shadowOffsetY = 0;
 }
 
 function draw() {
