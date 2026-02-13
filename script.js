@@ -101,41 +101,36 @@ function drawText() {
 
     context.font = fontSize + "px Comic Sans MS";
     context.textAlign = "center";
-
-    context.shadowColor = "rgba(45, 45, 255, 1)";
+    context.shadowColor = "rgba(45,45,255,1)";
     context.shadowBlur = 8;
 
-    // ---------------- SENTENCE 1 ----------------
+    // ================= SENTENCE 1 =================
     if(frameNumber < 250){
         context.fillStyle = `rgba(45,45,255,${opacity})`;
         context.fillText("Out of all the endless possibilities written in this universe,", canvas.width/2, canvas.height/2);
         opacity += 0.01;
     }
-
     if(frameNumber >= 250 && frameNumber < 500){
         context.fillStyle = `rgba(45,45,255,${opacity})`;
         context.fillText("Out of all the endless possibilities written in this universe,", canvas.width/2, canvas.height/2);
         opacity -= 0.01;
     }
-
     if(frameNumber == 500){ opacity = 0; }
 
-    // ---------------- SENTENCE 2 ----------------
+    // ================= SENTENCE 2 =================
     if(frameNumber > 500 && frameNumber < 750){
         context.fillStyle = `rgba(45,45,255,${opacity})`;
         context.fillText("somehow our hearts found each other, Zaina.", canvas.width/2, canvas.height/2);
         opacity += 0.01;
     }
-
     if(frameNumber >= 750 && frameNumber < 1000){
         context.fillStyle = `rgba(45,45,255,${opacity})`;
         context.fillText("somehow our hearts found each other, Zaina.", canvas.width/2, canvas.height/2);
         opacity -= 0.01;
     }
-
     if(frameNumber == 1000){ opacity = 0; }
 
-    // ---------------- SENTENCE 3 ----------------
+    // ================= SENTENCE 3 =================
     if(frameNumber > 1000 && frameNumber < 1250){
         context.fillStyle = `rgba(45,45,255,${opacity})`;
         drawTextWithLineBreaks([
@@ -144,7 +139,6 @@ function drawText() {
         ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
         opacity += 0.01;
     }
-
     if(frameNumber >= 1250 && frameNumber < 1500){
         context.fillStyle = `rgba(45,45,255,${opacity})`;
         drawTextWithLineBreaks([
@@ -153,10 +147,9 @@ function drawText() {
         ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
         opacity -= 0.01;
     }
-
     if(frameNumber == 1500){ opacity = 0; }
 
-    // ---------------- SENTENCE 4 ----------------
+    // ================= SENTENCE 4 =================
     if(frameNumber > 1500 && frameNumber < 1750){
         context.fillStyle = `rgba(45,45,255,${opacity})`;
         drawTextWithLineBreaks([
@@ -165,7 +158,6 @@ function drawText() {
         ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
         opacity += 0.01;
     }
-
     if(frameNumber >= 1750 && frameNumber < 2000){
         context.fillStyle = `rgba(45,45,255,${opacity})`;
         drawTextWithLineBreaks([
@@ -174,10 +166,9 @@ function drawText() {
         ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
         opacity -= 0.01;
     }
-
     if(frameNumber == 2000){ opacity = 0; }
 
-    // ---------------- SENTENCE 5 ----------------
+    // ================= SENTENCE 5 =================
     if(frameNumber > 2000 && frameNumber < 2250){
         context.fillStyle = `rgba(45,45,255,${opacity})`;
         drawTextWithLineBreaks([
@@ -186,7 +177,6 @@ function drawText() {
         ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
         opacity += 0.01;
     }
-
     if(frameNumber >= 2250 && frameNumber < 2500){
         context.fillStyle = `rgba(45,45,255,${opacity})`;
         drawTextWithLineBreaks([
@@ -195,23 +185,49 @@ function drawText() {
         ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
         opacity -= 0.01;
     }
-
     if(frameNumber == 2500){ opacity = 0; }
 
-    // ---------------- FINAL 3 SENTENCES TOGETHER ----------------
-    if(frameNumber > 2500){
-        context.fillStyle = `rgba(45,45,255,${thirdOpacity})`;
+    // ================= SENTENCE 6 =================
+    if(frameNumber > 2500 && frameNumber < 2750){
+        context.fillStyle = `rgba(45,45,255,${opacity})`;
+        context.fillText("I love you, Zaina, more deeply than words can ever explain.", canvas.width/2, canvas.height/2);
+        opacity += 0.01;
+    }
+    if(frameNumber >= 2750 && frameNumber < 3000){
+        context.fillStyle = `rgba(45,45,255,${opacity})`;
+        context.fillText("I love you, Zaina, more deeply than words can ever explain.", canvas.width/2, canvas.height/2);
+        opacity -= 0.01;
+    }
+    if(frameNumber == 3000){ opacity = 0; }
 
+    // ================= SENTENCE 7 =================
+    if(frameNumber > 3000 && frameNumber < 3250){
+        context.fillStyle = `rgba(45,45,255,${opacity})`;
+        drawTextWithLineBreaks([
+            "Maybe we are apart this year, but I will do everything in my power",
+            "to make sure our next Valentine’s Day is together, with no screens, no miles, only us."
+        ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        opacity += 0.01;
+    }
+    if(frameNumber >= 3250 && frameNumber < 3500){
+        context.fillStyle = `rgba(45,45,255,${opacity})`;
+        drawTextWithLineBreaks([
+            "Maybe we are apart this year, but I will do everything in my power",
+            "to make sure our next Valentine’s Day is together, with no screens, no miles, only us."
+        ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        opacity -= 0.01;
+    }
+    if(frameNumber == 3500){ opacity = 0; }
+
+    // ================= FINAL PERMANENT SCREEN =================
+    if(frameNumber > 3500){
+        context.fillStyle = "rgba(45,45,255,1)";
         drawTextWithLineBreaks([
             "I love you, Zaina, more deeply than words can ever explain.",
             "Maybe we are apart this year, but I will do everything in my power",
             "to make sure our next Valentine’s Day is together, with no screens, no miles, only us.",
             "Happy Valentine’s Day, meri jaan <3"
         ], canvas.width/2, canvas.height/2, fontSize, lineHeight);
-
-        if(thirdOpacity < 1){
-            thirdOpacity += 0.01;
-        }
 
         button.style.display = "block";
     }
